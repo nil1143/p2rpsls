@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,34 @@
     <script src="https://kit.fontawesome.com/08ba1e35c6.js" crossorigin="anonymous"></script>
     <title>Game</title>
 </head>
+
 <body>
-
-
-    <script src="assets/js/index.js"></script>
+    <!--Game window  -->
+    <section id="game-area">
+        <header>
+            <h1>Rock Paper Scissors Lizard Spock game </h1>
+        </header>
+        <div class="score">
+            <p>Score: <span id="user-score">0</span> - <span id="computer-score">0</span></p>
+        </div>
+        <div class="choices">
+            <div class="choice" data-choice="rock">
+                <h4>Rock</h4>
+            </div>
+            <div class="choice" data-choice="paper">
+                <h4>Paper</h4>
+            </div>
+            <div class="choice" data-choice="scissors">
+                <h4>Scissors</h4>
+            </div>
+            <div class="choice" data-choice="lizard">
+                <h4>Lizard</h4>
+            </div>
+            <div class="choice" data-choice="spock">
+                <h4>Spock</h4>
+            </div>
+        </div>
+        <script src="assets/js/index.js"></script>
 </body>
+
 </html>
