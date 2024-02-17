@@ -11,8 +11,8 @@ body {
 }
 
 /* Game content */
-/* Game Header */
 
+/* Game Header */
 h1 {
     color: #333;
     margin-top: 2rem;
@@ -49,4 +49,38 @@ h1 {
     transition: background-color 0.3s, transform 0.2s;
     width: 100px;
     height: 80px;
+}
+
+.choice {
+    font-weight: bold;
+    font-size: 1.25rem
+}
+
+.choice:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.choice-results {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+}
+
+.choice-results p {
+    margin: 5px;
+}
+
+.game-area {
+    background-color: #f8f8f8;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
