@@ -94,8 +94,13 @@ body {
     width: 75px;
     background-color: #ffffff;
 }
+.restart-btn:hover {
+    background-color: rgb(48, 45, 45);
+    color: white;
+    transform: scale(1.15);
+}
 
-/* Game content */
+/* ---Game content--- */
 
 /* Game Header */
 h1 {
