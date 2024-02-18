@@ -14,7 +14,7 @@ choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice')
         // console.log(userChoice)
-        console.log(determineWinner(userChoice, computerChoice));
+        updateScore(userChoice, computerChoice);
     })
 })
 
@@ -41,5 +41,26 @@ function determineWinner(userChoice, computerChoice) {
         return `You win! You chose ${userChoice}, computer chose ${computerChoice}.`
     } else {
         return `Computer wins! Computer chose ${computerChoice}, you chose ${userChoice}.`;
+    }
+}
+
+// Update score and result message
+
+function updateScore(userChoice, computerChoice) {
+    if (userScore < 5 && computerScore < 5) {
+        const result = determineWinner(userChoice, computerChoice);
+        if (result.startsWith('You win')) {
+            userScore++;
+        } else if (result.startsWith('Computer wins')) {
+            computerScore++;
+        }
+
+        userScoreSpan.textContent = userScore;
+        computerScoreSpan.textContent = computerScore;
+        resultMessage.textContent = result;
+
+        if (userScore === 5 || computerScore === 5) {
+            console.log('end')
+        }
     }
 }
