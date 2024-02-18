@@ -14,7 +14,6 @@ choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice')
         // console.log(userChoice)
-   
         userChoiceHandler(userChoice) 
     })
 })
@@ -62,6 +61,7 @@ function updateScore(userChoice, computerChoice) {
 
         if (userScore === 5 || computerScore === 5) {
             console.log('end')
+            endGame()
         }
     }
 }
@@ -70,4 +70,17 @@ function updateScore(userChoice, computerChoice) {
 function userChoiceHandler(userChoice) {
     const computerChoice = getComputerChoice();
     updateScore(userChoice, computerChoice);
+}
+
+// End game
+function endGame() {
+    if (userScore > computerScore) {
+        resultMessage.textContent = `Game over! You win the game with a score of ${userScore}-${computerScore}. Press Reset button to play again!`;
+    } else if (computerScore > userScore) {
+        resultMessage.textContent = `Game over! Computer wins the game with a score of ${computerScore}-${userScore}. Press Reset button to play again!`;
+    } else {
+        resultMessage.textContent = `Game over! It's a draw with a score of ${userScore}-${computerScore}.`;
+    }
+
+    choices.forEach(choice => choice.removeEventListener('click', null));
 }
