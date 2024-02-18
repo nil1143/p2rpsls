@@ -13,7 +13,8 @@ let computerScore = 0;
 choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice')
-        console.log(userChoice)
+        // console.log(userChoice)
+        console.log(determineWinner(userChoice, computerChoice));
     })
 })
 
@@ -23,4 +24,22 @@ function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * compChoices.length);
     return compChoices[randomIndex]
 }
-console.log(getComputerChoice())
+
+const computerChoice = getComputerChoice();
+
+// Determine winner
+function determineWinner(userChoice, computerChoice) {
+    if (userChoice === computerChoice) {
+        return 'It\'s draw!';
+    } else if (
+        (userChoice === 'rock' && (computerChoice === 'scissors' || computerChoice === 'lizard')) ||
+        (userChoice === 'paper' && (computerChoice === 'rock' || computerChoice === 'spock')) ||
+        (userChoice === 'scissors' && (computerChoice === 'paper' || computerChoice === 'lizard')) ||
+        (userChoice === 'lizard' && (computerChoice === 'spock' || computerChoice === 'paper')) ||
+        (userChoice === 'spock' && (computerChoice === 'rock' || computerChoice === 'scissors'))
+    ) {
+        return `You win! You chose ${userChoice}, computer chose ${computerChoice}.`
+    } else {
+        return `Computer wins! Computer chose ${computerChoice}, you chose ${userChoice}.`;
+    }
+}
