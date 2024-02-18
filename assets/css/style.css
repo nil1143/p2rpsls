@@ -5,10 +5,10 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: #f77c86;
-    /* background: url("../images/bg.webp") no-repeat center center/cover; */
+    /* background-color: #f77c86; */
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 /* Info / Reset Button */
@@ -87,13 +87,14 @@ body {
 }
 
 .restart-btn {
-    border:none;
+    border: none;
     font-size: 18px;
     padding: 4px;
     border-radius: 5px;
     width: 75px;
     background-color: #ffffff;
 }
+
 .restart-btn:hover {
     background-color: rgb(48, 45, 45);
     color: white;
