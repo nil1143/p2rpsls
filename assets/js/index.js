@@ -14,7 +14,8 @@ choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice')
         // console.log(userChoice)
-        updateScore(userChoice, computerChoice);
+   
+        userChoiceHandler(userChoice) 
     })
 })
 
@@ -63,4 +64,10 @@ function updateScore(userChoice, computerChoice) {
             console.log('end')
         }
     }
+}
+
+// Choice handler 
+function userChoiceHandler(userChoice) {
+    const computerChoice = getComputerChoice();
+    updateScore(userChoice, computerChoice);
 }
