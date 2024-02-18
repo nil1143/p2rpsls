@@ -5,3 +5,10 @@ const resultMessage = document.getElementById('result');
 
 let userScore = 0;
 let computerScore = 0;
+
+choices.forEach(choice => {
+    choice.addEventListener('click', () => {
+        const userChoice = choice.getAttribute('data-choice')
+        console.log(userChoice)
+    })
+})

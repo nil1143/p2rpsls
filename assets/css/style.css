@@ -5,10 +5,10 @@ body {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
-    /* background-color: #f77c86; */
+    background-color: #f77c86;
     margin: 0;
     padding: 0;
-    background-color: white;
+    /* background-color: white; */
 }
 
 /* Info / Reset Button */
