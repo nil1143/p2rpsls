@@ -109,7 +109,6 @@ const resetIcon = document.getElementById('restartb');
 const restartBtn = document.getElementById("restartBtn");
 const cancelBtn = document.getElementById('cancel');
 
-
 // Reset Icon
 resetIcon.onclick = function () {
     decisionModal.style.display = "block";
@@ -128,4 +127,12 @@ restartBtn.onclick = function () {
 // Cancel reset game
 cancelBtn.onclick = function () {
     decisionModal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal || event.target == decisionModal) {
+        modal.style.display = "none";
+        decisionModal.style.display = "none"
+    }
 };
