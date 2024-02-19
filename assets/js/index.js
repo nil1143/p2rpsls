@@ -14,7 +14,7 @@ choices.forEach(choice => {
     choice.addEventListener('click', () => {
         const userChoice = choice.getAttribute('data-choice')
         // console.log(userChoice)
-        userChoiceHandler(userChoice) 
+        userChoiceHandler(userChoice)
     })
 })
 
@@ -89,22 +89,43 @@ function endGame() {
 // MODALS
 // Info modal
 const modal = document.getElementById("info-modal");
-const infoBtn = document.getElementById("infobtn");
+const infoBtn = document.getElementById("infob");
 const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on info button, open the modal
-infoBtn.onclick = function() {
+infoBtn.onclick = function () {
     modal.style.display = "block"
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
-  };
+};
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+
+//   Reset modal
+const decisionModal = document.getElementById('decision-modal');
+const resetIcon = document.getElementById('restartb');
+const restartBtn = document.getElementById("restartBtn");
+const cancelBtn = document.getElementById('cancel');
+
+
+// Reset Icon
+resetIcon.onclick = function () {
+    decisionModal.style.display = "block";
+};
+
+// Reset game
+restartBtn.onclick = function () {
+    userScore = 0;
+    computerScore = 0;
+    resultMessage.textContent = '';
+    userScoreSpan.textContent = '0';
+    computerScoreSpan.textContent = '0';
+    decisionModal.style.display = "none";
+};
+
+// Cancel reset game
+cancelBtn.onclick = function () {
+    decisionModal.style.display = "none";
+};
