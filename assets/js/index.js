@@ -84,3 +84,27 @@ function endGame() {
 
     choices.forEach(choice => choice.removeEventListener('click', null));
 }
+
+
+// MODALS
+// Info modal
+const modal = document.getElementById("info-modal");
+const infoBtn = document.getElementById("infobtn");
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on info button, open the modal
+infoBtn.onclick = function() {
+    modal.style.display = "block"
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+  };
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
