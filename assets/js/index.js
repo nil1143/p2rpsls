@@ -102,6 +102,18 @@ span.onclick = function () {
     modal.style.display = "none";
 };
 
+// INSTRUCTION ONLOAD w Timeout
+function modalOff() {
+    modal.style.display = 'none';
+}
+
+window.onload = function onOff() {
+    modal.style.display = 'block';
+    window.setTimeout(modalOff, 3000);
+};
+
+
+
 
 //   Reset modal
 const decisionModal = document.getElementById('decision-modal');
