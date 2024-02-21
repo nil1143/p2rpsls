@@ -8,7 +8,6 @@ body {
     background-color: #f77c86;
     margin: 0;
     padding: 0;
-    /* background-color: white; */
 }
 
 /* Info / Reset Button */
@@ -17,7 +16,7 @@ body {
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    padding: 5px;
+    padding: 5px; 
 }
 
 .fa-info,
@@ -42,7 +41,7 @@ body {
 /* The info Modal Content/Box */
 .modal-content {
     background-color: #f6bebe;
-    margin: 15% auto;
+    margin: 10% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
@@ -57,6 +56,8 @@ body {
     height: 300px;
 }
 
+/* Instruction picture resized for mobile screen */
+
 @media only screen and (max-width: 600px) {
     .ins-img {
         display: flex;
@@ -65,7 +66,9 @@ body {
         width: 200px;
         height: 200px;
     }
-    
+    .modal-content {
+        font-size: 12px;
+    }
 }
 
 /* The Close Button */
