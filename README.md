@@ -160,3 +160,19 @@ Reset
 
 ![mobile3](assets/images/readme-images/mobile3.jpg)
 
+# **Testing**
+### Validator Testing
+#### HTML
+* Index: No errors were returned when passing through the official W3C validator
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fnil1143.github.io%2Fp2rpsls%2F
+
+#### CSS
+* No errors were found when passing through the official Jigsaw validator
+ - https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fnil1143.github.io%2Fp2rpsls%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+
+#### JS
+* No errors were found when passing through the official Jshint validator
+    * There are 16 functions in this file.
+    * Function with the largest signature take 2 arguments, while the median is 0.
+    * Largest function has 11 statements in it, while the median is 2.
+    * The most complex function has a cyclomatic complexity value of 17 while the median is 1.
