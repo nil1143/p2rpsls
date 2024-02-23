@@ -176,3 +176,15 @@ Reset
     * Function with the largest signature take 2 arguments, while the median is 0.
     * Largest function has 11 statements in it, while the median is 2.
     * The most complex function has a cyclomatic complexity value of 17 while the median is 1.
+
+### Accessibility Testing
+
+To check the colors and fonts, I used Lighthouse in the Google devtools. The results are shown below:
+
+Desktop
+
+![lighthouse-desktop](assets/images/readme-images/lighthouse-desktop.jpg)
+
+Mobile
+
+![lighthouse-mobile](assets/images/readme-images/lighthouse-mobile.jpg)
