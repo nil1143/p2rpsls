@@ -16,7 +16,7 @@
     * [Colour Scheme](#colour-scheme)
     * [Fonts](#fonts)
     * [Wireframes](#wireframes)
-
+* [Features](#features)
  
 - Description
 - Project goals and UX
@@ -116,3 +116,47 @@ Roboto
 
 ![Reset modal](assets/images/readme-images/wireframe%20mobile-2.jpg)
 </details><br>
+
+# **Features**
+
+### Desktop
+<br>
+Game Window
+
+![desktop1](assets/images/readme-images/desktop1.jpg)
+
+Instruction and Reset buttons trigger the modals
+
+![feature1](assets/images/readme-images/feature1.jpg)
+
+Game window with choice buttons, score and result message
+
+![feature4](assets/images/readme-images/feature4.jpg)
+
+Instruction modal appearing when entering the site and disappearing after 3 secs with setTimeout.
+<br>
+
+![desktop1](assets/images/readme-images/desktop2.jpg)
+
+Instruction modal content
+
+![desktop1](assets/images/readme-images/feature2.jpg)
+
+Reset modal content
+
+![desktop1](assets/images/readme-images/feature3.jpg)
+
+### Mobile
+<br>
+Game window
+
+![mobile1](assets/images/readme-images/mobile1.jpg)
+
+Instruction
+
+![mobile2](assets/images/readme-images/mobile2.jpg)
+
+Reset
+
+![mobile3](assets/images/readme-images/mobile3.jpg)
+
