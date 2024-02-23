@@ -12,17 +12,17 @@ let computerScore = 0;
 // My choice listener with arrow function
 choices.forEach(choice => {
     choice.addEventListener('click', () => {
-        const userChoice = choice.getAttribute('data-choice')
+        const userChoice = choice.getAttribute('data-choice');
         // console.log(userChoice)
-        userChoiceHandler(userChoice)
-    })
-})
+        userChoiceHandler(userChoice);
+    });
+});
 
 // Computer choice
 function getComputerChoice() {
     const compChoices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const randomIndex = Math.floor(Math.random() * compChoices.length);
-    return compChoices[randomIndex]
+    return compChoices[randomIndex];
 }
 
 const computerChoice = getComputerChoice();
@@ -38,7 +38,7 @@ function determineWinner(userChoice, computerChoice) {
         (userChoice === 'lizard' && (computerChoice === 'spock' || computerChoice === 'paper')) ||
         (userChoice === 'spock' && (computerChoice === 'rock' || computerChoice === 'scissors'))
     ) {
-        return `You win! You chose ${userChoice}, computer chose ${computerChoice}.`
+        return `You win! You chose ${userChoice}, computer chose ${computerChoice}.`;
     } else {
         return `Computer wins! Computer chose ${computerChoice}, you chose ${userChoice}.`;
     }
@@ -60,8 +60,8 @@ function updateScore(userChoice, computerChoice) {
         resultMessage.textContent = result;
 
         if (userScore === 5 || computerScore === 5) {
-            console.log('end')
-            endGame()
+            console.log('end');
+            endGame();
         }
     }
 }
@@ -94,8 +94,8 @@ const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on info button, open the modal
 infoBtn.onclick = function () {
-    modal.style.display = "block"
-}
+    modal.style.display = "block";
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -145,6 +145,6 @@ cancelBtn.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal || event.target == decisionModal) {
         modal.style.display = "none";
-        decisionModal.style.display = "none"
+        decisionModal.style.display = "none";
     }
 };
