@@ -25,8 +25,6 @@ function getComputerChoice() {
     return compChoices[randomIndex];
 }
 
-const computerChoice = getComputerChoice();
-
 // Determine winner
 function determineWinner(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
