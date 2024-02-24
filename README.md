@@ -191,16 +191,10 @@ Mobile
 
 ### User Stories Testing
 
-#### First Time User
 |Story No.|Result|Story|
 | ------------- | ------------- | ------------- |
-|1|As a user , <br> I want to navigate the website using multiple devices. <br> so that I can enjoy the game  <br><br>I know I am done when their are clear instructions shown to the user. <br><br>Evidence:<br>The index page has clear signpost how to start the game and when a user first opens the game page the instruction modal appears telling the user how to play the game.<br>|Test Pass|
-|2|As a first time user, <br> I want to be able to add sound when playing the game <br> so that I can get more indicators that a bomb has been defused or exploded. <br><br>I know I am done when sounds plays when the user defuses a bomb and a sound plays wen a bomb explodes. <br><br>Evidence:<br>In the settings modal, users are able to turn the sound on and control the volume level.<br>|Test Pass |
-|3|As a first time user, <br> I want to be able to change the colours <br> so that I can choose my lighting preference.  <br><br>I know I am done when I can change the game colours. <br><br>Evidence:<br>In the settings modal, users are able to turn the light mode on and off.<br>|Test Pass |
-|4|As a first time user, <br> I want to be able to change the colours <br> so that I can choose my lighting preference.  <br><br>I know I am done when I can change the game colours. <br><br>Evidence:<br>In the settings modal, users are able to turn the light mode on and off.<br>|Test Pass |
+|1|As a user, <br> I want to navigate the website using multiple devices <br><br>I know I am done because game is responsible and playable on multiply devices as shown above. <br>|Test Pass|
+|2|As a user, <br> I want to find general information and rules about the game <br><br>I know I am done when their are clear instructions shown to the user. <br>|Test Pass |
+|3|As a user, <br> I want to play the logical, luck game against computer <br><br>I know I am done when the game functionality is well coded. <br>|Test Pass |
+|4|As a user, <br> I want to restart current game and start from beggining <br><br>I know I am done when you can choose Reset button and make a decision to restart the game or not.<br> <br>|Test Pass |
 
-
-- As a user, I want to navigate the website using multiple devices.
-- As a user, I want to find general information and rules about the game.
-- As a user, I want to play the logical game against computer.
-- As a user, I want to restart current game and start from beggining.
