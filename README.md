@@ -17,6 +17,12 @@
     * [Fonts](#fonts)
     * [Wireframes](#wireframes)
 * [Features](#features)
+* [Testing](#testing)
+    * [Validator Testing](#validator-testing)
+    * [Accessibility testing](#accessibility-testing)
+    * [User Stories](#user-stories)
+    
+
  
 - Description
 - Project goals and UX
