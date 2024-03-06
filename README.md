@@ -21,18 +21,13 @@
     * [Validator Testing](#validator-testing)
     * [Accessibility testing](#accessibility-testing)
     * [User Stories](#user-stories)
-    
-
+    * [Fixed bugs](#fixed--bugs)
+* [Deployment](#deployment)
+    * [Cloning & Forking](#cloning--forking)
+    * [Local Deployment](#local-deployment)
+    * [Remote Deployment](#remote-deployment)
+* [Credits](#credits)
  
-- Description
-- Project goals and UX
-- Design
-- Wireframes
-- Features
-- Testing
-- Deployment
-- Technology used
-
 # **Description**
 
 ### Rock Paper Scissors Lizard Spock Game is an interactive game that tests your luck. <br> Player can choose one of the five options and the computer randomly select its choice. <br> The game determines the winner based on the rules: <br>
@@ -204,3 +199,45 @@ Mobile
 |3|As a user, <br> I want to play the logical, luck game against computer <br><br>I know I am done when the game functionality is well coded. <br>|Test Pass |
 |4|As a user, <br> I want to restart current game and start from beggining <br><br>I know I am done when you can choose Reset button and make a decision to restart the game or not.<br> <br>|Test Pass |
 
+# **Deployment**
+
+### Cloning & Forking
+
+#### Fork
+1. On GitHub.com, navigate to the [nil1143/p2rpsls](https://github.com/nil1143/p2rpsls) repository.
+2. In the top-right corner of the page, click Fork.
+3. By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
+4. Add a description to your fork.
+5. Click Create fork.
+
+#### Clone
+1. Above the list of files click the button that says 'Code'.
+2. Copy the URL for the repository.
+3. Open Terminal. Change the directory to the location where you want the cloned directory.
+4. Type git clone, and then paste the URL
+5. Press Enter.
+
+### Local Deployment
+1. Sign up to [Gitpod](https://gitpod.io/)
+2. Download the Gitpod browser extension.
+3. On GitHub.com, navigate to the [nil1143/p2rpsls](https://github.com/nil1143/p2rpsls) repository.
+4. Above the list of files click the button that says 'Gitpod'.
+
+### Remote Deployment
+ The site was deployed to Github pages. If you have forked/cloned the repository the steps to deploy are:
+ 1. On GitHub.com, navigate to your repository.
+ 2. Navigate to the settings tab.
+ 3. Click on the tab called 'pages' on the left hand side.
+ 4. From the source drop down list under the heading Build and deployment, select main.
+ 5. The page will hten provide the link to the website.
+
+ # **Credits**
+
+ ### Content
+- Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
+
+- Processes from the Love Maths project was used to help create this website - [CI Love Maths](https://code-institute-org.github.io/love-maths/)
+
+- HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
+
+- There has been useful guidance from various articles from Stack Overflow - [Stack Overflow ](https://stackoverflow.com/)

@@ -179,9 +179,9 @@ h1 {
     height: 80px;
 }
 
-.choice {
+.choice > h4 {
     font-weight: bold;
-    font-size: 1.25rem
+    font-size: 1.2rem
 }
 
 .choice:hover {
