@@ -26,6 +26,7 @@
     * [Cloning & Forking](#cloning--forking)
     * [Local Deployment](#local-deployment)
     * [Remote Deployment](#remote-deployment)
+* [Fixed Bugs](#fixed-bugs)
 * [Credits](#credits)
  
 # **Description**
@@ -231,7 +232,11 @@ Mobile
  4. From the source drop down list under the heading Build and deployment, select main.
  5. The page will hten provide the link to the website.
 
- # **Credits**
+# **Fixed Bugs**
+
+There are no bugs with the final version.
+
+# **Credits**
 
  ### Content
 - Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
